@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Special Surprise For You 💗</title>
+
+<style>
+
+/* BACKGROUND */
+
+body {
+    background: linear-gradient(135deg, #ffc0cb, #ffe4e1, #ffd6e7);
+    font-family: Georgia, serif;
+    text-align: center;
+    padding: 30px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* MAIN CARD */
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    max-width: 480px;
+    margin: auto;
+    box-shadow: 0 0 25px #ff8fab;
+    position: relative;
+    z-index: 1;
+}
+
+/* HEADINGS */
+
+h1 {
+    color: #ff4f87;
+    font-size: 30px;
+}
+
+h2 {
+    color: #ff4f87;
+}
+
+p {
+    color: #7a3048;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* BUTTONS */
+
+button {
+    background: #ff4f87;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    margin: 8px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #ff1744;
+    box-shadow: 0 5px 15px pink;
+}
+
+/* CONTENT SECTIONS */
+
+.section {
+    display: none;
+    margin-top: 25px;
+    padding: 20px;
+    background: #fff0f5;
+    border-radius: 20px;
+    animation: appear 0.6s ease;
+}
+
+@keyframes appear {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* PICTURES */
+
+img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px pink;
+}
+
+/* YOUTUBE VIDEO */
+
+.video-container {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    aspect-ratio: 16 / 9;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+/* FLOATING HEARTS */
+
+.heart {
+    position: fixed;
+    pointer-events: none;
+    animation: float 2.5s ease-out forwards;
+    z-index: 1000;
+    user-select: none;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(0.3) rotate(0deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-150px) scale(1.4) rotate(180deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-350px) scale(0.8) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* MESSAGE */
+
+#message {
+    color: #ff4f87;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* CLOSE BUTTON */
+
+.close-btn {
+    background: #d63384;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>🎂 Happy Birthday! 🎂</h1>
+
+    <p>
+        A little surprise made especially for you.
+        I hope you like it! 💗
+    </p>
+
+    <p>Choose one of the surprises below! 🎀</p>
+
+
+    <!-- CLICKABLE BUTTONS -->
+
+    <button onclick="showSection('birthday')">
+        💌 HAPPY BIRTHDAY TO MY SPECIAL PERSON (BEBE)!!
+    </button>
+
+    <button onclick="showSection('love')">
+        ❤️ ILOVEYOU ALWAYS ♡(˘ ˘ ˘)
+    </button>
+
+    <button onclick="showSection('motivation')">
+        🌷 CLICK ME (∩˃o˂∩)♡!!
+    </button>
+
+    <button onclick="showSection('picture')">
+        📸 MY FAVE PICTURE OF US ( ´･･)ﾉ(._.`)
+    </button>
+
+    <button onclick="showSection('video')">
+        🎥 GUESS WHAT BEBE (つ╥﹏╥)つ
+    </button>
+
+
+    <!-- BIRTHDAY LETTER -->
+
+    <div id="birthday" class="section">
+
+        <h2>🎂 Happy Birthday BEBE!</h2>
+
+        <p>HELLO BEBE,</p>
+
+        <p>
+            Happy Birthday! Today is your special day.
+            I hope your day is filled with happiness,
+            laughter, love, and beautiful memories.
+            And sorry for being makulit and pasaway.
+            I'll promise na I will do my best para maging okay
+            and hindi na agad-agad yun, pero I will do my best.
+        </p>
+
+        <p>
+            Sana matupad lahat ng wish mo and maging happy ka
+            for my little effort hehe. Wala ako money now pero
+            promise pag may pera na ko bibili kita ng bag na
+            Alberto huehue.
+        </p>
+
+        <p>
+            Always keep smiling and enjoy every moment
+            of your life. Never forget how special you are.
+            Enjoy ur birthday ha, wag masyado sad or birthday
+            blue ne. Iloveyouuuu!
+        </p>
+
+        <p><b>Enjoy your special day bebe! 𐙚 ❤️</b></p>
+
+        <button class="close-btn" onclick="closeSections()">
+            Close Letter 💌
+        </button>
+
+    </div>
+
+
+    <!-- LOVE LETTER -->
+
+    <div id="love" class="section">
+
+        <h2>❤️ My Letter</h2>
+
+        <p>Dear My Bebe,</p>
+
+        <p>
+            I just want you to know how special you are
+            to me. You bring happiness into my life
+            in ways that words cannot explain. And alam ko
+            na di ko kaya mag-express ng mahaba pero in one
+            word I can describe how grateful I am bebe.
+            Sorry sa English kalabaw ko.
+        </p>
+
+        <p>
+            Thank you for being yourself, for making
+            me smile, and for giving me beautiful
+            memories to treasure. I will cherish every moment
+            na tayo. Alam kong di natin alam hanggang saan
+            tayo pero sana habang buhay tayo magkasama.
+        </p>
+
+        <p>
+            No matter what happens, I hope you
+            never forget how much you mean to me.
+            For now alam mo naman situation natin,
+            sana after this babalik pa rin tayo sa isa't isa.
+        </p>
+
+        <p>
+            You are one of the best things that
+            happened in my life. Iloveyouuuu!
+        </p>
+
+        <p><b>(づ￣ ³￣)づ ❤️</b></p>
+
+        <button class="close-btn" onclick="closeSections()">
+            Close Letter 💌
+        </button>
+
+    </div>
+
+
+    <!-- MOTIVATION LETTER -->
+
+    <div id="motivation" class="section">
+
+        <h2>
+            🌷 A Little Motivation For You
+            づ(*ᴗ͈ˬᴗ͈)ꕤ*.ﾟ
+        </h2>
+
+        <p>( ˘ ³˘(◡‿◡˶) )</p>
+
+        <p>
+            Always remember that you are stronger
+            than you think and more capable than
+            you sometimes believe.
+        </p>
+
+        <p>
+            Life may not always be easy.
+            There will be challenges, failures,
+            and moments when you feel tired.
+            But please don't give up.
+        </p>
+
+        <p>
+            Take your time, believe in yourself,
+            and keep chasing your dreams.
+            You don't have to be perfect.
+            Just keep growing and doing your best.
+        </p>
+
+        <p>
+            I am always cheering for you.
+            Keep going, because beautiful things
+            are waiting for you.
+        </p>
+
+        <p><b>Believe in yourself! 💗</b></p>
+
+        <button class="close-btn" onclick="closeSections()">
+            Close Letter 💌
+        </button>
+
+    </div>
+
+
+    <!-- SPECIAL PICTURE -->
+
+    <div id="picture" class="section">
+
+        <h2>📸 Our Special Picture</h2>
+
+        <p>
+            A beautiful memory worth keeping. 💕
+        </p>
+
+        <img
+            src="IMG_2501 (1).jpeg"
+            alt="Our Special Picture">
+
+        <p>
+            Every picture tells a story,
+            and this one is special to me.
+        </p>
+
+        <p><b>Forever a beautiful memory! ❤️</b></p>
+
+        <button class="close-btn" onclick="closeSections()">
+            Close Picture
+        </button>
+
+    </div>
+
+
+    <!-- YOUTUBE VIDEO -->
+
+    <div id="video" class="section">
+
+        <h2>🎥 A Special Video For You</h2>
+
+        <p>
+            I have something special for you.
+            I hope this video makes you smile! ❤️
+        </p>
+
+        <div class="video-container">
+
+            <iframe
+                id="youtubeVideo"
+                src=""
+                title="Special YouTube Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <p>
+            Enjoy watching! 💗
+        </p>
+
+        <button class="close-btn" onclick="closeSections()">
+            Close Video
+        </button>
+
+    </div>
+
+
+    <div id="message"></div>
+
+</div>
+
+
+<script>
+
+// YOUTUBE VIDEO LINK
+
+const youtubeLink =
+"https://www.youtube.com/embed/dbVR391HzT8";
+
+
+// SHOW SELECTED SECTION
+
+function showSection(id) {
+
+    let sections = document.querySelectorAll(".section");
+
+    sections.forEach(section => {
+        section.style.display = "none";
+    });
+
+    let selected = document.getElementById(id);
+
+    selected.style.display = "block";
+
+
+    // LOAD YOUTUBE VIDEO
+
+    let video = document.getElementById("youtubeVideo");
+
+    if (id === "video") {
+        video.src = youtubeLink;
+    } else {
+        video.src = "";
+    }
+
+
+    // MESSAGE
+
+    document.getElementById("message").innerHTML =
+        "Made with love, just for you! 💗";
+
+
+    // HEART ANIMATION WHEN CLICKING
+
+    hearts("❤️", 20);
+
+}
+
+
+// CLOSE ALL SECTIONS
+
+function closeSections() {
+
+    let sections = document.querySelectorAll(".section");
+
+    sections.forEach(section => {
+        section.style.display = "none";
+    });
+
+
+    // STOP YOUTUBE VIDEO
+
+    document.getElementById("youtubeVideo").src = "";
+
+
+    document.getElementById("message").innerHTML =
+        "Choose another surprise! 💕";
+
+}
+
+
+// FLOATING HEARTS FUNCTION
+
+function hearts(emoji, amount) {
+
+    for (let i = 0; i < amount; i++) {
+
+        let heart = document.createElement("div");
+
+        heart.className = "heart";
+        heart.innerHTML = emoji;
+
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.top = (40 + Math.random() * 55) + "vh";
+
+        heart.style.fontSize =
+            (20 + Math.random() * 30) + "px";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 2500);
+
+    }
+
+}
+
+
+// 💗 HEARTS POP WHEN WEBSITE OPENS
+
+window.addEventListener("load", function() {
+
+    hearts("💗", 50);
+
+    setTimeout(function() {
+        hearts("❤️", 30);
+    }, 1000);
+
+    setTimeout(function() {
+        hearts("💕", 30);
+    }, 2000);
+
+    document.getElementById("message").innerHTML =
+        "A little love is waiting for you, Bebe! 💗";
+
+});
+
+</script>
+
+</body>
+</html>
+
